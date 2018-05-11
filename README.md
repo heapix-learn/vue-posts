@@ -1,6 +1,8 @@
 # vue-posts
 CRUD posts from jsonplaceholder via vue/vuex/router
 
+commit to /dev branch
+
 TODO: 
  
   * posts list (AllPosts.vue) 
