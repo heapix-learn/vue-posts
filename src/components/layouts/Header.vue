@@ -6,6 +6,7 @@
             <ul class="left hide-on-med-and-top">
                 <li><router-link to="/users">Users</router-link></li>
                 <li><router-link to="/users/create">Create user</router-link></li>
+                <li><router-link to="/posts">Posts</router-link></li>
             </ul>
           </div>
       </nav>
@@ -13,9 +14,6 @@
 </template>
 
 <script>
-export default {
-
-}
 </script>
 
 <style>
