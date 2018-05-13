@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-
-import Posts from '@/components/posts/Posts.vue'
+import Posts from '../components/posts/Posts.vue'
+import PostCreator from '../components/posts/PostCreator.vue'
 
 Vue.use(Router)
 
@@ -10,11 +10,11 @@ export default new Router({
   routes: [
     {
       path: '/posts',
-      component: Posts,
-      name: 'posts',
+      component: Posts
     },
     {
-      path: '/users/create', component:() => import('../components/users/UserCreator.vue') // ???????????????????????
-    },
+      path: '/posts/create',
+      component: PostCreator
+    }
   ]
 })

@@ -15,12 +15,12 @@ export default {
     })
   },
 
-  postNewPost() {
-
+  postNewPost(new_post) {
+        return http().post('posts', new_post)
   },
 
   deletePost() {
-
+    
   },
 
 }
