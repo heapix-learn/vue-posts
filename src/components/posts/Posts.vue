@@ -19,7 +19,6 @@ import PostService from '@/services/PostService.js'
 import { mapGetters } from 'vuex'
 
 export default {
-  name: 'Posts',
   computed: {
     ...mapGetters([ 
       'posts'

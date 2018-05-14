@@ -1,4 +1,4 @@
-import http from './'
+import http from './index'
 import store from '@/store'
 
 export default {

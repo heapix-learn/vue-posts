@@ -17,7 +17,6 @@
 import PostService from '@/services/PostService.js'
 
 export default {
-  name: 'PostCreator',
   data() {
     return {
       title: '',
