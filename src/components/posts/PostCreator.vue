@@ -24,16 +24,12 @@ export default {
     }
   },
   methods: {
-      post() {
-            PostService.postNewPost({
-              title: this.title,
-              body: this.body
-            })
-      }
+    post() {
+      PostService.postNewPost({
+        title: this.title,
+        body: this.body
+      })
+    }
   }
 }
 </script>
-
-<style>
-
-</style>

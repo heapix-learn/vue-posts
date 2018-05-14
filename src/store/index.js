@@ -10,11 +10,12 @@ export default new Vuex.Store({
   },
   getters: {
     posts: state => state.posts,
-    todos: state => state.todos
+    todos: state => state.todos,
+    todosLength: state => state.todos.length
   },
   mutations: {
     setPosts: (state, posts) => state.posts = posts,
-    setTodos: (state, items) => state.todos.push(items)
+    setTodos: (state, items) => state.todos = state.todos.concat(items)
   },
   actions: {
     setPosts: ({commit}, payload) => commit('setPosts', payload),
