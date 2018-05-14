@@ -11,7 +11,7 @@ export default new Vuex.Store({
     posts: state => state.posts,
   },
   mutations: {
-    setPosts: (state, posts) => state.posts = posts
+    setPosts: (state, posts) => state.posts = posts,
   },
   actions: {
     setPosts: ({commit}, payload) => commit('setPosts', payload)

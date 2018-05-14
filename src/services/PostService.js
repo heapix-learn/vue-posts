@@ -19,8 +19,7 @@ export default {
         return http().post('posts', new_post)
   },
 
-  deletePost() {
-    
-  },
-
+  deletePost(id) {
+    return http().delete(`posts/${id}`)
+  }
 }
