@@ -30,6 +30,6 @@ export default {
     position: fixed;
   }
   .main {
-    padding-top: 80px
+    padding-top: 70px
   }
 </style>
