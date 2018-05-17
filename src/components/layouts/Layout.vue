@@ -24,3 +24,12 @@ export default {
   }
 }
 </script>
+<style>
+  .header {
+    width: 100%;
+    position: fixed;
+  }
+  .main {
+    padding-top: 80px
+  }
+</style>
