@@ -14,16 +14,15 @@
           </div>
         </div>
       </ul>
-      <div class="show-more-btn center ">
-        <a class="waves-effect waves-light btn" @click="getMore(todosLength)">Show more</a>
-      </div>
     </div>
+    <infinite-loading @infinite="infiniteHandler" spinner="spiral"></infinite-loading>
   </div>  
 </template>
 
 <script>
 import TodoService from '@/services/TodoService'
 import { mapGetters } from 'vuex'
+import InfiniteLoading from 'vue-infinite-loading';
 
 export default {
   computed: {
@@ -38,7 +37,16 @@ export default {
   methods: {
     getMore(i) {
       TodoService.getTodos(i, 10)
+    },
+    infiniteHandler($state) {
+      setTimeout(() => {
+        this.getMore(this.todosLength);
+        $state.loaded();
+      }, 2000);
     }
+  },
+  components: {
+    InfiniteLoading
   }
 }
 </script>
