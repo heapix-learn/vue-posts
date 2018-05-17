@@ -15,7 +15,7 @@
         </div>
       </ul>
     </div>
-    <infinite-loading @infinite="infiniteHandler" spinner="spiral"></infinite-loading>
+    <infinite-loading @infinite="infiniteHandler" :distance="0" spinner="spiral"></infinite-loading>
   </div>  
 </template>
 
@@ -38,10 +38,10 @@ export default {
     getMore(i) {
       TodoService.getTodos(i, 10)
     },
-    infiniteHandler($state) {
+    infiniteHandler(todos) {
       setTimeout(() => {
         this.getMore(this.todosLength);
-        $state.loaded();
+        todos.loaded();
       }, 2000);
     }
   },
