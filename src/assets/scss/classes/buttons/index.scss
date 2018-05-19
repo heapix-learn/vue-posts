@@ -1,0 +1,30 @@
+@import '../../vars/index.scss';
+
+.scroll-up-btn {
+    opacity: .6;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10%;
+    cursor: pointer;
+    color: black;
+    background-color: $btn-main-opacity;
+}
+.scroll-up-btn:hover {
+    background-color: $btn-secondary-opacity;
+}
+.btn {
+    border: none;
+    outline: none;
+    border-radius: 5%;
+    cursor: pointer;
+    color: white;
+    background-color: $red;
+}
+.btn:hover {
+    background-color: $darken-red;
+}

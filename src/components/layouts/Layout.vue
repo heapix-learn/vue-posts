@@ -7,7 +7,11 @@
       <div class="row">
         <div class="left-side-content col s2"></div>
         <div class="content col s8">
-          <slot></slot>
+          <slot>
+          </slot>
+          <back-to-top>
+            <button class="scroll-up-btn"><i class="little material-icons">arrow_upward</i></button>
+          </back-to-top>
         </div>
         <div class="right-side-content col s2"></div>
       </div>
@@ -17,19 +21,15 @@
 
 <script>
 import Header from './Header'
+import BackToTop from 'vue-backtotop'
 
 export default {
   components: {
-      Header
+      Header,
+      BackToTop
   }
 }
 </script>
-<style>
-  .header {
-    width: 100%;
-    position: fixed;
-  }
-  .main {
-    padding-top: 70px
-  }
+<style lang="scss">
+  @import '@/assets/scss/index.scss';
 </style>

@@ -2,8 +2,8 @@
   <div class="todos">
     <div v-if="todos">
       <ul class="todo" v-for="todo in todos" :key="todo.id">
-        <div class="row solid-black-border">
-          <div class="col s8 animate-opacity">
+        <div class="row solid-black-border animate-opacity">
+          <div class="col s8">
             <li>Todo id: {{todo.id}}</li>
             <li>UserId: {{todo.userId}}</li>
             <li>Task: {{todo.title}}</li>

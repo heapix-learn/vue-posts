@@ -7,7 +7,7 @@
         <li>Posi id: {{post.id}}</li>
         <li><strong>Title: {{ post.title }}</strong></li>
         <li>Text: {{ post.body}}</li>
-        <a class="waves-effect waves-light red lighten-1 btn" @click="deleteThisPost(post.id)">Delete</a>
+        <button class="btn" @click="deleteThisPost(post.id)">Delete</button>
       </ul>
      </div>
    </div>
