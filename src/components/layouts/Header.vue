@@ -13,25 +13,6 @@
   </div>
 </template>
 
-<style>
-  nav {
-  animation-name: color-change;
-  animation-iteration-count: infinite;    
-  animation-direction: alternate;
-  animation-timing-function: ease;
-  animation-duration: 10s;
-  }
-  @keyframes color-change {
-    0% { background-color: black }
-    10% { background-color: blue }
-    20% { background-color: red }
-    30% { background-color: green }
-    40% { background-color: orange }
-    50% { background-color: yellow }
-    60% { background-color: pink }
-    70% { background-color: violet }
-    80% { background-color: brown }
-    90% { background-color: crimson }
-    100% { background-color: deeppink }
-  }
+<style lang="scss">
+@import '@/assets/scss/index.scss';
 </style>

@@ -1,0 +1,11 @@
+// base DOM elements
+@import '../vars/index.scss';
+@import '../mixins/index.scss';
+
+p {
+    color: $red;
+    font-family: $main-font;
+}
+nav {
+    animation: $nav-animation;
+}

@@ -1,0 +1,4 @@
+@import '../../mixins/animations/index.scss';
+.animate-opacity {
+    animation: $opacity-change-2s;
+}

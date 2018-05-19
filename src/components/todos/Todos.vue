@@ -2,8 +2,8 @@
   <div class="todos">
     <div v-if="todos">
       <ul class="todo" v-for="todo in todos" :key="todo.id">
-        <div class="row" id="border">
-          <div class="col s8">
+        <div class="row solid-black-border">
+          <div class="col s8 animate-opacity">
             <li>Todo id: {{todo.id}}</li>
             <li>UserId: {{todo.userId}}</li>
             <li>Task: {{todo.title}}</li>
@@ -20,8 +20,8 @@
 </template>
 
 <script>
-import TodoService from '@/services/TodoService'
-import { mapGetters } from 'vuex'
+import TodoService from '@/services/TodoService';
+import { mapGetters } from 'vuex';
 import InfiniteLoading from 'vue-infinite-loading';
 
 export default {
@@ -51,10 +51,6 @@ export default {
 }
 </script>
 
-<style>
-  #border {
-    border-style: solid;
-    border-width: 3px;
-    border-color: black;
-  }
+<style lang="scss">
+  @import '@/assets/scss/index.scss';
 </style>
